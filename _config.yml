@@ -6,7 +6,7 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: DoodleBears's Personal Website'
+title: DoodleBears's Personal Website
 email: yangmufeng233@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   Made by Codecademy's courses [Deploy Your Personal Git Website]
