@@ -1,3 +1,10 @@
+---
+layout: post
+title:  "Git Learning"
+date:   2020-03-30 21:19:51 +0800
+categories: Git
+---
+
 # Git Learning
 :::info
 主要存储学习Git的一些笔记
