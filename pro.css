@@ -1,0 +1,522 @@
+@charset "utf-8";
+/* CSS Document */
+/*将所有margin和padding的预设都归零*/
+* {
+            margin: 0px;
+            padding: 0px;
+  }
+/*锁定body在绝对的位置*/
+body{
+		position: absolute;/*锁定body的位置*/
+		margin:0;
+		width: 100%;
+		height:100%;
+}
+p
+  {
+  		font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+  }
+/*控制页面的高度*/
+html{
+			font-family:"source-sans-pro";
+			height: 100%;
+}
+/*为底栏footer的位置而设定*/
+.wrap {
+            min-height: 100%;
+        }
+ 
+/*header顶栏*/
+.up{
+			position: fixed;
+			z-index: 9999;/*让顶栏永远置于最上层，不会被其他图层覆盖*/
+			height: 90px;
+			width:100%;
+			
+}
+/*header以下内容开始的位置 和 背景BG颜色设置*/
+.topCenter{
+			position: relative;
+			z-index: 2;
+			height: 80px;
+			transition: all .4s;
+			width:100%;
+			background-color:rgba(255,255,255,0.91);
+}
+/*内容图片预设*/
+.topCenter a img{
+			margin-left:75px;
+			margin-top:7px;
+			height: 65px;
+}
+/*顶栏header的选项*/
+.topCenter ul{
+            /* 清除ul标签的默认样式 */
+            margin-top:0px;
+            list-style-type: none;
+            overflow: hidden;
+			height: 80px;
+			width: 1000px;/*宽度也改为自动*/
+    		white-space:nowrap
+}
+/*顶栏header的选项*/
+.topCenter ul li{
+		left:0px;
+		position: relative;
+		margin-top:42px;
+		
+		margin-left: 60px;/* 两个li之间的距离*/
+        float:left;
+		
+		overflow: hidden;
+		font-size: 22px;
+		
+		
+}
+/*顶栏header的选项*/
+.topCenter ul li a{
+         color:grey;
+		 text-decoration: none; /* 去除下划线 */
+}
+.topCenter ul li a:hover{
+        color:black;
+		
+}
+.topCenter:hover{
+        box-shadow: 0px 0px 15px 1px #AAAAAA;
+		background-color:rgba(255,255,255,0.98);
+}
+/*以上*/
+/*是header部分用的style*/
+
+
+/*网站的Main部分用的style*/
+/*以下*/
+.main-info{
+			margin-top: 90px;
+			padding-bottom: 180px;
+			z-index: 2;
+			
+			width:100%;
+			background-image: url("htdocs/image/BG_00.png") ;
+			background-size: 40%;
+			background-repeat: repeat;
+			background-position: 0% 45%;
+}	
+/*每一个部分：Game、music等是一个section*/
+.section{
+		margin-top: 50px;
+		position: relative;
+		top:80px;
+}
+/*顶栏header下方的“近期新闻”news*/
+.news{
+		position:inherit;
+		z-index: 1;
+		width:100%;
+		background-color:#F9F9F9;
+}
+/*“近期新闻”news的Slider位置控制(By WOWSlider)*/
+.middle{
+		position:relative;
+		top:20px;
+}
+
+.album{
+		margin-top: 30px;
+		position:inherit;
+		top:30px;
+		z-index: 1;
+		width:100%;
+		height: 100%;
+		
+}
+.album2{
+		margin-top: 30px;
+		position:inherit;
+		top:30px;
+		z-index: 1;
+		width:100%;
+		height: 100%;
+		background-color:rgba(237,237,237,0.37);
+}
+
+
+/*网站设计理念部分*/
+.webdesign{
+		position: relative;
+		border-style: solid; border-width: 4px;
+		border-color:#A0CB88;
+		padding-top: 30px;
+		z-index: 1;
+		width:70%;
+		
+		background-repeat:repeat-y;
+		background-image: url("htdocs/image/paper-bg.jpg");
+		background-size: 70% 70;
+		background-position: center;
+}
+.webdesign-bg{
+		position:relative;
+		top:50px;
+		z-index: 1;
+		width:100%;
+		background-color:rgba(237,237,237,0.37);
+		height: 100%;
+}
+.webdesign-info{
+	/*一般的文字设定*/
+	line-width: 145px;/*行距*/
+	padding-top: 30px;
+	padding-bottom: 90px;
+	color:#282822;
+	font-size: 24px;
+	text-indent:15px;/*段落首行缩进*/
+	line-height: 45px;/*行距*/
+}
+.webdesign-info img{
+	margin-left: 30px;/*图片间距*/
+	line-height: 45px;/*行距*/
+}
+.title {
+	/*title的文字设定*/
+	color:rgba(255,255,255,0.00);
+	-webkit-text-stroke: 1.6px #000000;/*描边的像素，也就是粗细，这里指定是2像素的黑色边框*/
+	font-size: 64px;
+	font-weight: 900;
+	width:auto;
+	height:auto;
+	line-height: 65px;/*行高*/
+}
+.hui-red{
+	color:#E23C3C;
+	word-wrap:break-word;  
+    word-break:break-all;  /*行末自动换行*/
+    overflow: hidden;
+}
+h3{
+	line-height: 55px;/*行高*/
+}
+h4{
+	line-height: 45px;/*行高*/
+	text-indent:35px;/*段落首行缩进*/
+	font-weight:bold;
+}
+.p1 {
+	/*p1的文字设定*/
+	text-indent:35px;/*段落首行缩进*/
+	padding-left: 20px;
+	padding-right: 20px;
+	word-wrap:break-word;  
+    word-break:break-all;  /*行末自动换行*/
+    overflow: hidden;
+
+}
+#green-border{
+	border-style: solid; border-width: 3px;
+	border-color:#78B4AB;
+}
+#red-border{
+	border-style: solid; border-width: 3px;
+	border-color:#E23C3C;
+}
+#brown-border{
+	border-style: solid; border-width: 3px;
+	border-color:#B4A078;
+}
+.Banner_font1{
+	position: relative;
+	
+	-webkit-text-stroke: 1.2px black;/*描边的像素，也就是粗细，这里指定是2像素的黑色边框*/
+	font-style: italic;
+	font-size: 64px;
+	font-weight: 800;
+	color: rgba
+	
+}
+
+.Banner_font2{
+	position: relative;
+	top:25px;
+	-webkit-text-stroke: 1.2px black;/*描边的像素，也就是粗细，这里指定是2像素的黑色边框*/
+	font-style: italic;
+	font-size: 64px;
+	font-weight: 800;
+	color: rgba
+}
+
+.Banner_font3{
+	position: relative;
+	
+	top:50px;
+	-webkit-text-stroke: 1.2px black;/*描边的像素，也就是粗细，这里指定是2像素的黑色边框*/
+	font-style: italic;
+	font-size: 64px;
+	font-weight: 800;
+	color: rgba(255,255,255,0.00);
+}
+
+.Video{
+	position: relative;
+	top: 35px;
+}
+.Banner a img{
+			margin-top:7px;
+			height: 80px;
+}
+.left{
+	margin-left:14%;
+}
+
+.member{
+		position: relative;
+		z-index: 1;
+		width:100%;
+		height:100%;
+}
+.members{
+		position: inherit;
+		margin-left:0%;
+		width:100%;
+		height:100%;
+}
+.members img{
+	margin-left:0%;
+	
+}
+.members table{
+	position: relative;
+	margin-top: 60px;
+	
+}
+.tab_td{
+	position: relative;
+	left: -50px;
+	margin-left: 80px;
+	top: -70px;
+	
+}
+.tab_td td{
+	
+	border-color:#9EB478;
+}
+.tab_td2{
+	margin-left: -20px;
+	position: relative;
+	
+	width: 30px;
+	
+	
+}
+.tab_td2 td{
+	border-color:#9EB478;
+}
+
+.tab_td .edge3 h2{
+	line-height: 50px;
+	margin-left: 21px;
+	font-size: 26px;
+	font-weight: 550;	
+}
+
+.tab_td .edge3 h3{
+	line-height: 45px;
+	margin-left: 21px;
+	font-size: 26px;
+	font-weight: 550;	
+}
+.members .edge2{
+	background-image: url("htdocs/image/edge_00.png");
+	background-repeat: no-repeat;
+	background-position: 1px -3px;
+	background-size:100% 100%;
+	
+}
+.members .edge2 p{
+	
+	font-weight: 400;
+}
+.members .edge2-1{
+	border-style: solid; border-width: 3px;
+	border-color:#CB2B2B;
+	background-color:rgba(255,255,255,0.77);
+	width: 1100px;
+	height: 290px;
+}
+.members .edge2-1 h2{
+	font-size: 48px;
+	line-height: 41px;
+	width: 1100px;
+	margin-left: 17px;
+}
+.members .edge2-1 h3{
+	line-height: 39px;
+	margin-left: 21px;
+	font-size: 26px;
+	font-weight: 450;	
+}
+.members .edge2-1 p{
+	text-indent: 2em;
+	width: 640px;
+	margin-bottom: 11px;
+	margin-left: 21px;
+	font-size: 28px;
+	font-weight: 450;	
+}
+
+.members .edge4 h2{
+	line-height: 55px;
+	text-align: center;
+	color: #2A2A2A;
+	font-weight: bold;
+}
+.members .edge3{
+	width: 700px;
+	background-repeat:repeat-y;
+	background-color:rgba(255,255,255,0.77);
+	background-size: 100% 100;
+	background-position: center;
+	border-style: solid; border-width: 3px;
+	border-color:#9EB478;
+}
+.members .edge4{
+	margin-left: 100px;
+	
+	
+	background-repeat:repeat-y;
+	background-color:rgba(255,255,255,0.77);
+	background-size: 100% 100;
+	background-position: center;
+	border-style: solid; border-width: 4px;
+	
+}
+.members .edge3 p{
+	text-indent: 2em;
+	width: 640px;
+	margin-bottom: 11px;
+	margin-left: 21px;
+	font-size: 23px;
+	font-weight: 450;
+}
+td{
+	transition: all .4s;
+}
+.banner-img {
+	transition: all .4s;
+}
+.album img:hover{
+	box-shadow: 1px 1px 23px 10.5px #C9C9C9;
+	cursor:pointer;
+}
+.tab_td td:hover{
+	box-shadow: 0px 0px 16px 5px #C9C9C9;
+	background-color:rgba(255,255,255,0.95);
+	cursor:pointer;
+	border-color:#E23C3C;
+}
+.tab_td2 td:hover{
+	box-shadow: 0px 0px 13px 2.5px #C9C9C9;
+	background-color:rgba(255,255,255,0.93);
+	cursor:pointer;
+	border-color:#E23C3C;
+}
+.members .edge2-1 td:hover{
+	box-shadow: 0px 0px 23px 20px #C9C9C9;
+	cursor:pointer;
+}
+.members .edge1{
+	transition: all .4s;
+	border-style: solid; border-width: 4px;
+	border-color:#78B4AB;
+}
+.members img:hover{
+	box-shadow: 0px 0px 0px 8px #C65A5A;
+	border-color:#E23C3C;
+	cursor:pointer;
+}
+.members .edge1-2{
+	box-shadow: 0px 0px 13px 0.5px #3E3E3E;
+	border-style: solid; border-width: 4px;
+	border-color:#78B4AB;
+}
+.members td{
+	padding-left: 10;
+}
+.members .tab_td td h2{
+	margin-top: 10px;
+	width: 650px;
+	margin-bottom: 5px;
+	margin-left: 21px;
+	font-size: 35px;
+	font-weight: 550;
+}
+.members .tab_td2 td h2{
+	margin-top: 8px;
+	width: 890px;
+	margin-bottom: 8px;
+	margin-left: 8px;
+	font-size: 35px;
+	
+}
+.members td p{
+	width: 520px;
+	margin-bottom: 11px;
+	margin-left: 21px;
+	font-size: 23px;
+	font-weight: 250;
+}
+
+.bottom{
+			margin-bottom: 0px;
+			margin-top: 0px;
+            height: 107px;
+            background-color: #F5676A;
+            z-index: 9999;
+			
+}
+#bottomCenter{
+			position: relative;
+			z-index: 2;
+			height: 100px;
+			margin-top: 0px;
+			width:100%;
+			
+			background-color:#FAFAFA;
+
+}
+#bottomCenter a img{
+			margin-left:140px;
+			margin-top:5px;
+			height: 95px;
+}
+
+#bottomCenter ul{
+            /* 清除ul标签的默认样式 */
+            margin-top:0px;
+            list-style-type: none;
+            overflow: hidden;
+			height: 100px;
+			width: 1200px;/*宽度也改为自动*/
+    		white-space:nowrap
+}
+#bottomCenter ul li{
+		left:0px;
+		position: relative;
+		margin-top:38px;
+		
+		margin-left: 130px;/* 两个li之间的距离*/
+        float:left;
+		
+		overflow: hidden;
+		font-size: 24px;
+		
+		
+}
+#bottomCenter ul li a{
+         color:grey;
+		 text-decoration: none; /* 去除下划线 */
+}
+#bottomCenter ul li a:hover{
+        color:black;
+		
+}
